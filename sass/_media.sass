@@ -1,0 +1,296 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .services
+    &__card
+      width: 450px
+      & h3
+        font-size: 18px
+      & span, ul
+        font-size: 13px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .hero
+    background-image: url(../img/family.png)
+    background-repeat: no-repeat
+    background-position: 140% 50%
+    background-size: 60%
+    padding: 90px 0 90px 0
+    &-info
+      &__title
+      &__img
+        display: none
+  .about
+    &__info
+      justify-content: start
+      flex-direction: column
+      align-items: center
+  .services
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 30px
+    &__cards
+      flex-direction: column
+    &__card
+      width: 90%
+      & h3
+        font-size: 22px
+      & span, ul
+        font-size: 15px
+    &__card:not(:last-of-type)
+      margin-bottom: 15px
+  .reviews
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 40px
+  .entry-form
+    margin-top: 60px
+    &__img
+      display: none
+    &__block
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-bottom: 60px
+    &__info
+      justify-content: start
+    &__text
+      margin-top: 0
+      margin-bottom: 15px
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
+  .navbar
+    &-bottom
+      &--mobile
+        display: block
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 70px
+        background: $background
+        // background-image: url(../img/family.png)
+        // background-repeat: no-repeat
+        // background-position: 50% 50%
+        // background-size: 90%
+        &_block
+          display: flex
+          justify-content: space-around
+          flex-direction: column
+    &-top
+      &--mobile
+        &_hidden
+          display: none
+    &-main
+      top: 0
+      height: 70px
+      &--mobile
+        &_hidden
+          display: none
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+  .menu
+    &-button
+      display: flex
+      width: 50px
+      height: 50px
+      padding: 0
+      align-items: center
+      justify-content: center
+      gap: 5px
+      flex-direction: column
+      border-radius: 100%
+      border: none
+      cursor: pointer
+      background-color: $background
+      &__line
+        width: 30px
+        height: 3px
+        background-color: $secondary
+  .contact-info
+    &--mobile
+      display: flex
+      flex-direction: column
+      justify-content: start
+      align-items: center
+      gap: 1.25rem
+      margin-top: 1.25rem
+      & a
+        font-size: 1rem
+        color: $text-color
+        & img
+          width: 20px
+  .navbar
+    &-main
+      &__logo
+        & img
+          width: 200px
+      &__menu
+        margin-top: 1.25rem
+        flex-direction: column
+        justify-content: start
+        align-items: center
+        gap: 1.25rem
+        & a
+          font-size: 1.125rem
+          margin: 0
+      &__link
+        position: absolute
+        bottom: 1.875rem
+        right: 0
+        left: 0
+        border-bottom: none
+        & a
+          justify-content: center
+          font-size: 1.5rem
+          color: $background
+          & img
+            width: 50px
+  .hero
+    background-position: 120% 90%
+    background-size: 60%
+    &-info
+      &__title
+        margin: 3.75rem 0 2.5rem 0
+        width: 100%
+        & h1
+          font-size: 1.625rem
+          margin: 0
+        & h2
+          font-size: 1.5rem
+          margin: 0 0 1.25rem 0
+        & p
+          max-width: 475px
+          font-size: 1rem
+          margin: 0
+      &__highlight
+        font-size: 2.25rem
+        border: 3px solid $primary
+        margin: 1.25rem 0
+    &__button
+      margin-top: 1.25rem
+      font-size: 1.375rem
+      & img
+        width: 40px
+  .about
+    padding: 3.75rem 0
+    &__title
+      margin-bottom: 1.25rem
+    &__text
+      & p, ul
+        font-size: 1rem
+      & p:last-of-type
+        margin-bottom: 1.25rem
+    &__button
+      font-size: 1.375rem
+      & img
+        width: 40px
+  .services
+    &__title
+      font-size: 1.625rem
+    &__card
+      width: 100%
+      & h3
+        font-size: 1.375rem
+      & span, ul
+        font-size: 1rem
+    &__card:not(:last-of-type)
+      margin-bottom: 1.25rem
+  .reviews
+    &__title
+      margin-bottom: 1.25rem
+    &-slider
+      max-width: 100%
+      &__button
+        width: 60px
+        height: 60px
+        & img
+    &__text
+      font-size: 1rem
+  .footer
+    &__logo
+      width: 200px
+    &__info
+      flex-direction: column
+      align-items: flex-start
+      & a
+        font-size: 1rem
+      & img
+        width: 40px
+    &__bottom
+      padding: 0.9375rem 0 0.625rem 0
+  .messenger
+    & a
+      font-size: 1rem
+    & img
+      width: 40px
+
+@media (max-width: 576px)
+  .hero
+    background-image: none
+    padding: 30px 0 60px 0
+    &-info
+      flex-direction: column
+      &__img
+        display: flex
+    &__button
+      width: -webkit-fill-available
+      justify-content: center
+  .about
+    &__button
+      width: -webkit-fill-available
+      justify-content: center
+  .reviews
+    &-slider
+      &__item
+        padding: 20px
+        width: 100%
+      &__button
+        width: 50px
+        height: 50px
+        &--prev
+          top: 20px
+          right: 75px
+        &--next
+          top: 20px
+          right: 20px
+    &__name
+      & h3
+        font-size: 16px
+    &__patient
+      & img
+        width: 50px
+        margin-right: 10px
+    &__star
+      & img
+        width: 20px
+  .entry-form
+    &__text
+      width: 95%
+      & p
+        margin-left: 30px
+      & span
+        margin-left: 15px
+    &__form
+      padding: 20px 10px
+      width: 100%
+      & button
+        font-size: 22px
+        width: -webkit-fill-available
+        justify-content: center
+  .footer
+    &__nav
+      flex-wrap: wrap
+    &__logo
+      width: 70%
+      margin-bottom: 20px
+    &__info
+      gap: 10px

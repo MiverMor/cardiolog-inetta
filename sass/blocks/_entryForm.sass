@@ -1,0 +1,72 @@
+.entry-form
+  margin-top: 98px
+  background: $background
+  &__block
+    display: flex
+    justify-content: space-between
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: end
+  &__text
+    width: 502px
+    margin-top: 56px
+    margin-bottom: 6px
+    & p
+      font-weight: 700
+      font-size: 30px
+      color: $secondary
+      display: inline-block
+      margin-left: 90px
+    & span
+      font-weight: 700
+      font-size: 24px
+      line-height: 83%
+      color: #d0e8dc
+      margin-left: 40px
+  &__form
+    border: 3px solid #c8c8c8
+    border-radius: 8px
+    padding: 40px 20px
+    width: 511px
+    height: fit-content
+    & label.invalid
+      color: red
+      margin-top: 0
+    & label
+      color: #111
+      display: block
+      font-weight: 500
+      & span
+        color: #d4e8e3
+    & label:not(:first-child)
+      margin-top: 20px
+    & input[type="text"],
+    input[type="tel"],
+    textarea
+      width: 100%
+      padding: 8px
+      border: none
+      border-bottom: 2px solid #ccc
+      font-size: 14px
+      outline: none
+    & textarea
+      resize: none
+      border: 2px solid #ccc
+      border-radius: 8px
+      padding: 10px
+      margin-top: 5px
+    & button
+      margin-top: 20px
+      background-color: $primary
+      color: white
+      border: none
+      padding: 10px 15px
+      font-size: 16px
+      font-weight: 600
+      border-radius: 8px
+      cursor: pointer
+      display: flex
+      align-items: center
+      gap: 15px
+
